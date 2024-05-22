@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hipoteca</title>
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/espacios.css">
+</head>
+
+<body class="bg-info">
+
+    <h1 class="text-primary mx-2 mb-5 mt-3">Inmogestión S.A</h1>
+
+    <div class="container">
+
+        <div class="card mx-3 px-3 shadow-lg" style="border-left: 10px #007bff solid;">
+
+            <h3 class="text-primary text-uppercase my-4">Cálculo hipotecario</h3>
+
+            <form action="" id="fmortgage" onsubmit="return calculateMortgage(event)" method="get" target="_self">
+
+                <div class="row">
+
+                    <div class="col-6 mb-3">
+
+                        <label for="fcuota" class="form-label">Cuota Inicial</label>
+                        <input type="text" name="" id="fcuota" class="form-control">
+
+                    </div>
+
+                    <div class="col-6 mb-3">
+
+                        <label for="fvalortotal" class="form-label">Valor Total del Inmueble</label>
+                        <input type="text" name="" id="fvalortotal" class="form-control">
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-6 mb-3">
+
+                        <label for="ftinteres" class="form-label">Tasa de Interés</label>
+                        <input type="text" name="" id="ftinteres" class="form-control">
+
+                    </div>
+
+                    <div class="col-6 mb-3">
+
+                        <label for="fplazo" class="form-label">Plazo en años</label>
+                        <input type="text" name="" id="fplazo" class="form-control">
+
+                    </div>
+
+                </div>
+
+                <div class="mb-4">
+
+                    <button type="submit" class="btn btn-primary">Calcular</button>
+                    <button onclick="resetForm()" class="btn btn-primary">Limpiar</button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <div class="container mt-5">
+
+        <h3 class="text-primary text-uppercase my-4 mx-3">Resultado</h3>
+
+        <div class="card mx-3 px-3 shadow-lg mb-5">
+
+            <div class="row">
+
+                <div class="col-12 pt-2">
+
+                    <label for="omontoprestamo">Monto Total del Préstamo: </label>
+                    <output id="omontoprestamo" class="form-control">0</output>
+
+                </div>
+
+                <div class="col-12 pb-2">
+
+                    <label for="ocuota">Valor Cuota Mensual: </label>
+                    <output id="ocuota" class="form-control text-light bg-secondary">0</output>
+
+                </div>
+
+                <div class="col-12 pb-2">
+
+                    <label for="demo">ejemplo de w3school:</label> 
+                    <output id="demo" class="form-control text-light bg-secondary">0</output>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="card mx-3 shadow-lg">
+
+        <div class="accordion" id="accordionExample">
+            
+            <div class="accordion-item">
+
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Revisa nuestras ofertas
+                    </button>
+                </h2>
+
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+
+                    <div class="accordion-body">
+
+                        <strong>Podemos ayudarte con la gestión de créditos ante el banco.</strong> Nuestros servicios son totalmente
+                        gratuitos.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="accordion-item">
+
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Suscríbete a nuestro newsletter
+                    </button>
+                </h2>
+
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+
+                    <div class="accordion-body">
+
+                        <strong>Mantente informado.</strong> Deja tu email y mantenteinformado de nuestras novedades.
+
+                        <div>
+
+                            <button class="btn btn-primary mt-2" onclick="window.location.href='views/contact.html'">Suscríbete</button>
+                            
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="scripts/mortgage.js"></script>
+    <script src="lib/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/espacios.css">
+</head>
+
+<body class="bg-info">
+
+    <h1 class="text-primary mx-2 mb-5 mt-3">Inmogestión S.A chingadamadre</h1>
+
+    <div class="container">
+
+        <div class="card mx-3 px-3 mt-5 pt-4 shadow-lg" style="border-left: 10px #007bff solid;">
+
+            <div class="card-body">
+
+                <h4 class="card-title mb-3 text-primary text-uppercase">Formulario de contacto</h4>
+
+                <form action="" method="get " name="fcontact" onsubmit="contactForm(event,'fcontact')" target="_blank">
+
+                    <div class="row">
+
+                        <div class="col-6 mb-3">
+
+                            <label for="fnombres" class="form-label"><strong>Nombre(s):</strong></label>
+                            <input type="text" name="" id="fnombres" class="form-control">
+
+                        </div>
+
+                        <div class="col-6 mb-3">
+
+                            <label for="fapellidos" class="form-label">Apellidos: </label>
+                            <input type="text" name="" id="fapellidos" class="form-control">
+
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-6 mb-3">
+
+                            <label for="fnumero" class="form-label">No. Telefónico: </label>
+                            <input type="text" name="" id="fnumero" class="form-control">
+
+                        </div>
+
+                        <div class="col-6 mb-3">
+
+                            <label for="fcorreo" class="form-label">Correo: </label>
+                            <input type="text" name="" id="fcorreo" class="form-control">
+
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-6 mb-3">
+
+                            <label for="fpais" class="form-label">País: </label>
+                            <input type="text" name="" id="fpais" class="form-control">
+
+                        </div>
+
+                        <div class="col-6 mb-3">
+
+                            <label for="fciudad" class="form-label">Ciudad: </label>
+                            <input type="text" name="" id="fciudad" class="form-control">
+
+                        </div>
+
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Guardar</button>
+
+                </form>
+
+                <div>
+
+                    <a href="../index.html" class="btn btn-primary">Regresar</a>
+                    <button type="submit" class="btn btn-primary" onclick="listarContactos()">Listar</button>
+
+                </div>
+
+            </div>
+
+            <div id="tableContact" class="mb-4">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="../scripts/contact.js"></script>
+    <script src="../lib/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+
+</html>
