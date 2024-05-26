@@ -1,7 +1,6 @@
 comandos para actualizar el proyecto en github
 
-    cd /c
-    cd "Users\User acer"
+    cd "/c/Users/User acer"
     cd "Desktop/Cursos Udemy/Programación y Desarrollo Front-end y Back-end desde cero/app02"
 
 

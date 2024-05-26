@@ -8,3 +8,33 @@
     color: red;
     background-color: black;
 }
+
+.tableFixHead {
+    overflow-y: auto;
+    height: 250px;
+    text-align: left;
+    display: block;
+}
+
+.tableFixHead thead th {
+    position: sticky;
+    top: 0px;
+    border: 2px solid #1b12a1;
+    z-index: 1;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    padding: 8px 16px;
+    border: 2px solid #ff0909;
+}
+
+th {
+    background-color: #736dc7;
+}
+
+

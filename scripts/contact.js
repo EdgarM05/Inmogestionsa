@@ -39,7 +39,8 @@ function listarContactos() {
 
     let dinamicTable = "";
 
-    dinamicTable += "<table class='table'>";
+    dinamicTable += "<table>";
+    dinamicTable += "<thead>";
     dinamicTable += "<tr>";
     dinamicTable += "<th>ID</th>";
     dinamicTable += "<th>Nombre(s)</th>";
@@ -48,6 +49,7 @@ function listarContactos() {
     dinamicTable += "<th>Correo</th>";
     dinamicTable += "<th>Acción</th>";
     dinamicTable += "</tr>";
+    dinamicTable += "</thead>";
 
     let personasGuardadas = [];
     personasGuardadas = allStorage();
@@ -56,6 +58,7 @@ function listarContactos() {
         dinamicTable += "<tr>";
         let personaObjeto = JSON.parse(personasGuardadas[i]);
 
+        dinamicTable += "<tbody>";
         dinamicTable += "<td>";
         dinamicTable += personaObjeto.id;
         dinamicTable += "</td>";
@@ -81,6 +84,7 @@ function listarContactos() {
         dinamicTable += '<a href="javascript:eliminarContacto(' + personaObjeto.id + ');">Eliminar</a>';
         dinamicTable += "</td>";
         dinamicTable += "</tr>";
+        dinamicTable += "</tbody>";
     }
 
     dinamicTable += "</table>";
