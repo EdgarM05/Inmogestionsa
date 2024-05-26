@@ -1,0 +1,25 @@
+comandos para actualizar el proyecto en github
+
+    cd /c
+    cd "Users\User acer"
+    cd "Desktop/Cursos Udemy/Programación y Desarrollo Front-end y Back-end desde cero/app02"
+
+
+Aquí es para saber si si hay cambio para subir:
+    git status
+    On branch main
+    Your branch is up to date with 'origin/main'.
+
+    Changes not staged for commit:
+    (use "git add <file>..." to update what will be committed)
+    (use "git restore <file>..." to discard changes in working directory)
+            modified:   views/contact.html
+    no changes added to commit (use "git add" and/or "git commit -a")
+
+
+Añadir cambios:
+
+    git add .
+    git commit -m "tercer commit"
+    git push origin main
+    
